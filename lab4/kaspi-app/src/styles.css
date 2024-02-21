@@ -1,0 +1,120 @@
+/* src/styles.css */
+body {
+    font-family: 'Roboto', sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #ffffff; /* Светло-серый цвет фона */
+    color: #333; /* Цвет текста */
+  }
+  
+  .products-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    padding: 20px;
+    background: linear-gradient(to bottom, #f0f0f0 0%, #ffffff 100%); /* Градиентный фон контейнера продуктов */
+    border-radius: 16px;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1); /* Тень контейнера продуктов */
+    border: 1px solid #ddd; /* Граница между продуктами */
+  }
+  
+  .product-card {
+    position: relative;
+    background-color: #fff;
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1);
+    border-radius: 16px;
+    overflow: hidden;
+    margin: 15px;
+    max-width: 300px;
+    width: 100%;
+    transition: transform 0.3s ease-in-out;
+  }
+  
+  .product-card:hover {
+    transform: scale(1.05);
+  }
+  
+  .product-image-container {
+    position: relative;
+    overflow: hidden;
+    border-radius: 16px 16px 0 0;
+  }
+  
+  .product-image {
+    max-width: 100%;
+    height: auto;
+    transition: transform 0.3s ease-in-out;
+  }
+  
+  .product-image-container:hover .product-image {
+    transform: scale(1.1);
+  }
+  
+  .product-details {
+    padding: 15px;
+  }
+  
+  .product-name {
+    color: #e74c3c; /* Цвет имени продукта */
+    font-size: 1.5em;
+    margin-bottom: 5px;
+    text-align: center; /* Выравнивание текста по центру */
+  }
+  
+  .description {
+    color: #555;
+    margin-bottom: 10px;
+  }
+  
+  .rating-price-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 10px;
+  }
+  
+  .rating {
+    color: #f39c12; /* Цвет рейтинга */
+    font-weight: bold; /* Жирный текст рейтинга */
+  }
+  
+  .price {
+    font-size: 1.2em;
+    color: #3498db; /* Цвет цены */
+    font-weight: bold;
+  }
+  
+  .share-button {
+    position: absolute;
+    bottom: 15px;
+    left: 50%;
+    transform: translateX(-50%);
+    background-color: #2ecc71; /* Цвет кнопки "Поделиться" */
+    color: #fff;
+    padding: 10px 20px;
+    border: none;
+    cursor: pointer;
+    border-radius: 8px;
+    transition: background-color 0.3s ease-in-out;
+  }
+  
+  .share-button:hover {
+    background-color: #27ae60; /* Цвет кнопки "Поделиться" при наведении */
+  }
+  
+  .image-gallery {
+    display: flex;
+    margin-top: 10px;
+  }
+  
+  .gallery-image {
+    flex: 1;
+    margin-right: 10px;
+  }
+  
+  .gallery-image img {
+    max-width: 100%;
+    height: auto;
+    border-radius: 8px;
+  }
+  

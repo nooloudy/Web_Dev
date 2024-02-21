@@ -1,0 +1,27 @@
+<!-- src/app/products/products.component.html -->
+<div class="products-container">
+    <div *ngFor="let product of products" class="product-card">
+      <div class="product-image-container">
+        <img [src]="product.image" alt="{{ product.name }}" class="product-image" />
+      </div>
+  
+      <div class="product-details">
+        <h3 class="product-name">{{ product.name }}</h3>
+        <p class="description">{{ product.description }}</p>
+        <div class="rating-price-container">
+          <p class="rating">Rating: {{ product.rating }}</p>
+          <p class="price">Price: {{ product.price.toFixed(2) }}₸</p>
+        </div>
+      </div>
+  
+      <button (click)="shareProduct(product)" class="share-button">Share</button>
+  
+      <!-- Optional Product Image Gallery -->
+      <div *ngIf="product.images" class="image-gallery">
+        <div *ngFor="let image of product.images" class="gallery-image">
+          <img [src]="image" alt="{{ product.name }} Image" />
+        </div>
+      </div>
+    </div>
+  </div>
+  
