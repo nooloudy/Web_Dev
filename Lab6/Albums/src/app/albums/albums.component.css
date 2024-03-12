@@ -1,0 +1,62 @@
+fieldset.add-album {
+  border: 1px solid #ccc;
+  padding: 10px;
+  margin-bottom: 20px;
+  display: flex;
+  align-items: center;
+}
+
+input[type="text"] {
+  width: 200px;
+  padding: 8px;
+  margin-right: 10px;
+  border: 1px solid #ddd;
+}
+
+button {
+  padding: 8px 15px;
+  background-color: #007bff;
+  color: white;
+  border: none;
+  cursor: pointer;
+}
+
+button:hover {
+  background-color: #0056b3;
+}
+
+ul.album-list {
+  list-style-type: none;
+  padding: 0;
+}
+
+li.album-item {
+  border: 1px solid #ddd;
+  padding: 15px;
+  margin-bottom: 10px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+a {
+  text-decoration: none;
+  color: #333;
+}
+
+a:hover {
+  text-decoration: underline;
+}
+
+li.album-item button {
+  background-color: #dc3545;
+  color: white;
+  border: none;
+  cursor: pointer;
+  padding: 8px 15px;
+  margin-left: auto;
+}
+
+li.album-item button:hover {
+  background-color: #c82333;
+}

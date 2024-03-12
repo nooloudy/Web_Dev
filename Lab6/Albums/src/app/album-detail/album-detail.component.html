@@ -1,0 +1,15 @@
+<div class="container">
+    <h1 class="album-title">{{ album?.title }} details</h1>
+  
+    <form class="album-form">
+      <label for="newTitle">Album title:</label>
+      <input type="text" id="newTitle" name="newTitle" [(ngModel)]="inputValue" placeholder="{{ album?.title }}">
+      <button class="save-button" (click)="changeAlbumTitle()">SAVE</button>
+    </form>
+  
+    <div class="button-container">
+      <button class="back-button" routerLink="/albums">Return back</button>
+      <button class="photos-button" [routerLink]="'/albums/' + album!.id + '/photos'">Photos</button>
+    </div>
+  </div>
+  
